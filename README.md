@@ -119,3 +119,7 @@ streamlit run app.py --server.port 8502
 - MODIS (satellite vegetation data)
 - USDA NASS (crop yield data)
 
+## Notebooks Folder
+
+The `notebooks/` folder contains Jupyter notebooks documenting data preprocessing, feature engineering, and model training. These notebooks are not required to run the Streamlit dashboard.
+
