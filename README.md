@@ -4,6 +4,33 @@
 
 Interactive dashboard analyzing crop yield volatility across US agricultural counties from 2005-2023. Shows how climate change affects corn and soybean production stability.
 
+## Key Findings
+
+- Temperature variability (not just warming) is the primary driver of increased yield volatility
+- 97 counties identified as high-risk with significant volatility increases
+- Geographic patterns show impacts concentrated in marginal agricultural regions (Great Plains, Southern states)
+- Most counties show stable or improving trends, but vulnerable regions are experiencing deterioration
+
+## Results
+
+### Model Performance
+- XGBoost selected as best model with R² = 0.566 (explains 56.6% of volatility variation)
+- RMSE: 5.95% and MAE: 3.93% on test set
+- Cross-validation R² = 0.636 shows good generalization
+
+### Dataset Coverage
+- 56,474 observations
+- 196 agricultural counties
+- 19 years (2005-2023)
+- 2 crops (corn and soybean)
+
+### Risk Distribution
+- High Risk (>5% CV increase): Counties with extreme volatility increases
+- Medium Risk (2-5% CV increase): Moderate volatility increases
+- Low Risk (0-2% CV change): Relatively stable counties
+- Improving (<0% CV change): Counties with decreasing volatility
+
+## Quick Start
 
 ### 1. Install Python
 You need Python 3.8 or higher installed on your computer.
